@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACJ,OAAO,EAAE,KAAK",
-"sources": ["../../tbi-scan/tbi-scan.scss"],
-"names": [],
-"file": "tbi-scan.css"
-}
