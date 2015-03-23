@@ -1,3 +1,4 @@
+phonegap/www/
 node_modules
 dist
 test/temp
