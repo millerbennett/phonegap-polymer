@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACJ,OAAO,EAAE,KAAK;;;AAEhB,UAAW;EACV,UAAU,EAAE,cAAc;EAC1B,MAAM,EAAE,UAAU;EAClB,OAAO,EAAE,CAAC",
+"sources": ["../../tbi-app/tbi-app.scss"],
+"names": [],
+"file": "tbi-app.css"
+}
