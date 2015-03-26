@@ -26,7 +26,8 @@
 
           navigator.camera.getPicture(onPhotoDataSuccess.bind(this), onFail, { 
             quality: 50,
-            destinationType: navigator.camera.DestinationType.DATA_URL 
+            destinationType: navigator.camera.DestinationType.DATA_URL,
+            correctOrientation: true
           });
         }
       });
