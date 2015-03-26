@@ -16,12 +16,8 @@
         scans: [],
         // define element prototype here
         addSomething: function() {
-          var that = this;
-
-          console.log(typeof navigator);
-
           function onPhotoDataSuccess(imageData) {
-            that.scans.push({ src: 'data:image/jpeg;base64,' + imageData });
+            this.scans.push({ src: 'data:image/jpeg;base64,' + imageData });
           }
 
           function onFail(message) {

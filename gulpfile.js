@@ -212,7 +212,7 @@ gulp.task('cleanPhonegap', del.bind(null, ['phonegap/www/*']));
 
 // Copy dist into Phonegap www
 gulp.task('copyPhonegap', function() {
-  gulp.src('dist/*').pipe(gulp.dest('phonegap/www/'));
+  gulp.src('dist/**/*').pipe(gulp.dest('phonegap/www/'));
 });
 
 // Build Production Files, Load into Phonegap
