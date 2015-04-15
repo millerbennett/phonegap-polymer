@@ -149,7 +149,7 @@ gulp.task('vulcanize', function () {
 // Clean Output Directory
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-// Watch Files For Changes & Reload
+// Watch Files For Changes & Reload (Local server)
 gulp.task('serve', ['styles', 'elements'], function () {
   browserSync({
     notify: false,
@@ -170,6 +170,15 @@ gulp.task('serve', ['styles', 'elements'], function () {
   gulp.watch(['app/elements/**/*.{scss,css}'], ['elements', reload]);
   gulp.watch(['app/{scripts,elements}/**/*.js'], ['jshint']);
   gulp.watch(['app/images/**/*'], reload);
+});
+
+// Watch Files for Changes & Reload
+gulp.task('watch', ['styles', 'elements'], function () {
+  gulp.watch(['app/**/*.html'], ['default']);
+  gulp.watch(['app/styles/**/*.{scss,css}'], ['default']);
+  gulp.watch(['app/elements/**/*.{scss,css}'], ['default']);
+  gulp.watch(['app/{scripts,elements}/**/*.js'], ['default']);
+  gulp.watch(['app/images/**/*'], ['default']);
 });
 
 // Build and serve the output from the dist build
