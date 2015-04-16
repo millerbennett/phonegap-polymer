@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="tbi-app.css">
     <take-photo on-add-something="{{ addSomething }}"></take-photo>
     <ul id="todo-list">
+      <tbi-scan src="http://www.fillmurray.com/600/300"></tbi-scan>
       <template repeat="{{ scan in scans }}">
-        <img style="width: 100%; margin-bottom: 20px;" src="{{ scan.src }}"></img>
+        <tbi-scan src="{{ scan.src }}"></tbi-scan>
       </template>
     </ul>
   </template>

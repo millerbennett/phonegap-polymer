@@ -1,14 +1,17 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<polymer-element name="tbi-scan" extends="li" attributes="scan">
+<polymer-element name="tbi-scan" attributes="src">
   <template>
     <link rel="stylesheet" href="tbi-scan.css">
-    {{ scan.id }}
+    <img src="{{ src }}" on-click="{{ onClick }}" />
   </template>
   <script>
     (function () {
       Polymer({
         // define element prototype here
+        onClick: function() {
+          console.log('hello there!');
+        }
       });
     })();
   </script>
