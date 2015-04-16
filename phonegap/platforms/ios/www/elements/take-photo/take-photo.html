@@ -1,0 +1,20 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+
+<polymer-element name="take-photo" attributes="">
+  <template>
+    <link rel="stylesheet" href="take-photo.css">
+    <paper-fab icon="add" on-click="{{ takePhoto }}"></paper-fab>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        // define element prototype here
+        takePhoto: function() {
+          this.fire('add-something');
+        }
+      });
+    })();
+  </script>
+</polymer-element>
